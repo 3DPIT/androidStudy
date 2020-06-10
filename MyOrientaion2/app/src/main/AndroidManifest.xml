@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.threedpit.myorientaion2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--
+            * 여기서 orientation은 방향이 바뀌었을때 알려달라
+            * 입력상자가 있더라도 자동으로 키패드 뜨지않게
+            해달라. 의미
+            -->
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+    <!--
+             android:screenOrientation="landscape"
+             가로방향으로 유지 하겠다.
+               android:screenOrientation="portrait"
+               세로방향으로 유지 하겠다.
+            -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
