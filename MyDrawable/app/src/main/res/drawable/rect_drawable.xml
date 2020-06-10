@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"><!--rectangle은 사각형을 그리는 것 -->
+    <size android:width="200dp"
+        android:height="120dp"/><!--사각형의 사이즈 -->
+    <stroke android:width="1dp"
+        android:color="#0000ff"/><!--테두리선 두께와 색상 적용-->
+    <solid android:color="#aaddff"/><!--배경 설정-->
+    <padding android:bottom="1dp"/><!--패딩 설정-->
+</shape><!--쉐이프 드로어블 사용시 사용하는 태그-->
+
+<!--이미지 파일로 저장한다고 생각하기보다는
+사용자가 봤을 때는 그렇지만 직접 그려준것-->

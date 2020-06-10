@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+    android:drawable="@drawable/finger_pressed"/>
+    <!--위의 경우 누를 상태면 누른 상태의 이미지를 보여주고 -->
+    <item android:drawable="@drawable/finger"/>
+    <!--그 경우가 끝났다면 다시 원래 이미지로 돌아와라 라고 생각-->
+</selector>
