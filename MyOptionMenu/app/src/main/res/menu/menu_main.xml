@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--여기서 item이 지칭하는것은 메뉴 아이템을 말합니다.-->
+
+    <!--새로고침 하는 버튼-->
+    <item android:id="@+id/menu_refresh"
+        android:title="새로고침"
+        android:icon="@drawable/menu_refresh"
+        app:showAsAction="always"/><!--안드로이드 기본api 가 아니라
+        프로젝트에서 속성을 가져오겠다 하는 의미
+        -->
+
+    <!--검색 하는 버튼-->
+    <item android:id="@+id/menu_search"
+        android:title="검색"
+        android:icon="@drawable/menu_search"
+        app:showAsAction="always"/>
+
+    <!--설정 하는 버튼-->
+    <item android:id="@+id/menu_settings"
+        android:title="설정"
+        android:icon="@drawable/menu_settings"
+        app:showAsAction="always"/>
+</menu>
