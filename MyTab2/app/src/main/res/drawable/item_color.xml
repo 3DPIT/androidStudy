@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color ="#51032d" android:state_checked="true"/>
+    <item android:color="#CFD8DC"/>
+
+    <!--여기서 state_cheked 선택된 상태이면 위에 색
+    아니면 아래색을 보여달라라는 뜻-->
+</selector>

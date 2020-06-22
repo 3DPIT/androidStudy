@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        //AppBarLayout은 액션바의 영역을 가리킨다고 생각하면됨
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            //Toolbar는 아이콘이 들어가는 영역
+            //elevation은 앞으로 올라온듯한 느낌을 주는것
+            //툴바쪽 타이틀 이름 생성되는 부분
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="1dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+                
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="타이틀"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+                
+            </androidx.appcompat.widget.Toolbar>
+
+            //탭에 대한 정보
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:elevation="1dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorAccent"
+                app:tabTextColor="@color/colorPrimary"/>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+        //여기 기준으로 위에는 상단 액션바 부분
+        // 여기 기준으로 아래는 하단의 화면 전체
+
+        // 실제 화면 영역
+        //CoordinatorLayout 안쪽에 화면 구성요소를 넣은 다음에
+        //거기에 app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        // 이것을 넣게 되면 자동으로 상단에 앱바 레이아웃이 차지하고 잇는 나머지 영역을
+        //계산해서 차지하게 된다.
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
