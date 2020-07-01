@@ -42,7 +42,7 @@ public class MyButton extends AppCompatButton{
     }
     */
    //onDraw 특정 무엇을 그릴때
-   //onTouchEvent 의 경우 사용자 터치시 사요
+   //onTouchEvent 의 경우 사용자 터치시 사용
 
 
     @Override
