@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         * data는 보낸 데이터 3dpit이 전달이 된다.
         * */
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==101){/**이런식으로 어디서 왔는지 구분 가능*/
+        if(resultCode==200){/**이런식으로 어디서 왔는지 구분 가능*/
             if(data !=null){
                 String name = data.getStringExtra("name");
                 if(name!=null){
