@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator" >
+    <!--interpolator는 우리가 애니메이션이 똑같은 속도로 가는게 아니고 다른 속도로
+    움직이게 하기 위해 사용한다. -->
+
+    <!--
+    repeatCount는 몇번 반복할껀지
+    fillAfter 이것은 애니메이션이 끝나고 마지막 위치고 둘것인지
+    -->
+    <translate
+        android:fromXDelta="0%p"
+        android:toXDelta="100%p"
+        android:duration="500"
+        android:repeatCount="0"
+        android:fillAfter="true"
+        />
+</set>

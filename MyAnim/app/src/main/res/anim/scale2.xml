@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--확대 축소를 위한 태그
+    duration 2.5초 지속
+    pivotX 는 가로방향의 중심축이 어디인지
+    fromXScale="1.0" 1.0은 원래 내 크기에서 시작
+    toXScale="2.0" 2배로 키우겠다 하는것
+    -->
+    <scale
+        android:duration="2500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="2.0"
+        android:toYScale="2.0"
+        />
+    <!--startOffset="2500" 이것의 의미는 2.5초 후에 아래 테그
+    실행해라의 의미이다.-->
+    <scale
+        android:startOffset="2500"
+        android:duration="2500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.5"
+        android:toYScale="0.5"
+        />
+</set>
